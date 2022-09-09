@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+body{
+    background-color: rgba(245, 240, 233, 0.973);
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.image-content{
+    height: 100%;
+}
+
+.card-container *{
+    flex: 1;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #FFFF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-container .full-content{
+    padding: 2rem;
+}
+
+.full-content .header h4{
+    color:#ccc;
+}
+
+.Btn-wrapper{
+    text-align: center;
+    width: 100%;
+}
+
+.button{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color:#FFFF;
+    background-color: #1D61BC;
+    padding: .5rem 2rem;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s linear;
+    font-weight: bold;
+    width: 80%;
+   justify-content: center;
+}
+
+.button .AddBtn_text{
+    display: inline;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+}
+
+.button svg{
+    width: 16px;
+    height: 16px;
+    display: inline;
+}
+
+.button:hover{
+       color: #1D61BC;
+       background-color: transparent;
+       border-color: #1D61BC;
+}
+
+.paragraph .amount{
+    display: flex;
+    align-items: center;
+}
+
+.paragraph p{
+    color: rgb(77, 74, 74);
+}
+
+.paragraph .amount h3{
+    margin-left: 1rem;
+    position: relative;
+    color: #ccc;
+    display: inline;
+}
+
+.paragraph .amount h3::after{
+     position: absolute;
+     content: "";
+     top: 50%;
+     left: 0;
+     width: 4.5rem;
+     height: 2px;
+     background-color: rgb(173, 173, 173);
+}
+
+
+.paragraph .amount h1{
+    font-family: 'Fraunces', serif;
+    color: #1D61BC;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container{
+        flex-direction:column;
+    }
+    .Btn-wrapper .button{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
